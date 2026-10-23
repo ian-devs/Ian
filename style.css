@@ -1,0 +1,211 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.5;
+}
+
+header {
+    background: #174ea6;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 5px;
+}
+
+nav {
+    background: #123b78;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #2864b5;
+}
+
+main {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+h2 {
+    color: #174ea6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.card {
+    background: #eef4ff;
+    border-left: 5px solid #174ea6;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+    background: white;
+}
+
+button, .button {
+    display: inline-block;
+    background: #174ea6;
+    color: white;
+    padding: 11px 17px;
+    margin: 12px 5px 12px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button:hover, .button:hover {
+    background: #123b78;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #174ea6;
+    color: white;
+}
+
+tbody tr:hover {
+    background: #f1f6ff;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.present {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.absent {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+.late {
+    color: #92400e;
+    background: #fef3c7;
+}
+
+.success {
+    color: #166534;
+    background: #dcfce7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    color: #991b1b;
+    background: #fee2e2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.note {
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px 10px;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    main {
+        margin: 12px;
+        padding: 14px;
+    }
+}
+
+@media print {
+    nav, button, form {
+        display: none;
+    }
+
+    main {
+        box-shadow: none;
+        max-width: none;
+    }
+}
